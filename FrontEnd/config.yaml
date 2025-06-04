@@ -1,0 +1,17 @@
+credentials:
+  usernames:
+    admin:
+      email: admin@example.com
+      name: Admin User
+      password: $2b$12$8z3X5jK7tZ9q2wL1pF9mF.4x2y3z4w5x6y7z8w9x0y1z2w3x4y5z6
+    member:
+      email: member@example.com
+      name: Member User
+      password: $2b$12$9a4Y6kL8uA0q3wM2pG0nH.5x3y4z5w6x7y8z9w0x1y2z3w4x5y6z7
+cookie:
+  expiry_days: 30
+  key: random_signature_key
+  name: hema_cookie
+preauthorized:
+  emails:
+    - preauth@example.com

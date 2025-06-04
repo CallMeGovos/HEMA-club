@@ -1,4 +1,11 @@
+#Front-end
 streamlit
+streamlit-authenticator
 pandas
 altair
 requests
+tiktoken
+openai
+#Back-end
+django==5.0
+djangorestframework==3.15
