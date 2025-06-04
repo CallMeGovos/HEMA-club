@@ -21,8 +21,8 @@
   - Lên lịch tập  
   - Nhận tư vấn
 
-####Trang đăng nhập, đăng ký
-<p align="center">
-  <img src="images/login.png" alt="Login" width="45%"/>
-  <img src="images/register.png" alt="Register" width="45%"/>
-</p>
+#### Trang Đăng nhập
+![Login Screen](images/login.png)
+
+#### Trang Đăng ký
+![Register Screen](images/register.png)
