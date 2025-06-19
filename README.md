@@ -26,3 +26,17 @@
 
 #### Trang Đăng ký
 ![Register Screen](images/register.png)
+
+#### Cấu trúc dự án
+Hema-club/
+├── app.py
+├── back_End.py
+├── static/
+│   └── style.css
+├── templates/
+│   ├── base.html
+│   ├── login.html
+│   ├── register.html
+│   ├── chatbot.html
+│   └── callbot.html
+├── Database.db

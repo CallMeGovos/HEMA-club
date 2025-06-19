@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+{% block title %}Callbot{% endblock %}
+{% block content %}
+<div class="row">
+  <div class="col-md-8 mx-auto">
+    <div class="card">
+      <div class="card-header">
+        <h4>Callbot</h4>
+        <form method="POST" class="d-inline">
+          <select name="callbot_name" class="form-select d-inline-block w-auto" onchange="this.form.submit()">
+            {% for name in bot_names %}
+            <option value="{{ name }}" {% if name == selected_bot %}selected{% endif %}>{{ name }}</option>
+            {% else %}
+            <option value="Garen">Garen</option>
+            {% endfor %}
+          </select>
+        </form>
+      </div>
+      <div class="card-body chat-container">
+        {% for msg in messages %}
+        <div class="{{ 'user-message' if msg.isUser else 'bot-message' }}">
+          {{ msg.text }}
+        </div>
+        {% else %}
+        <p>Chưa có tin nhắn.</p>
+        {% endfor %}
+      </div>
+      <div class="card-footer">
+        <form method="POST">
+          <input type="hidden" name="callbot_name" value="{{ selected_bot }}">
+          <div class="input-group">
+            <input type="text" class="form-control" name="message" placeholder="Nhập tin nhắn...">
+            <button type="submit" class="btn btn-primary">Gửi</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}
