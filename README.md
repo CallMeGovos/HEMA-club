@@ -29,7 +29,7 @@
 
 #### Cấu trúc dự án
 Hema-club/
-'''
+```
 ├── app.py
 ├── back_End.py
 ├── static/
@@ -41,7 +41,7 @@ Hema-club/
 │   ├── chatbot.html
 │   └── callbot.html
 ├── Database.db
-'''
+```
 
 ####Cách khởi chạy dự án
 ## Installation
@@ -60,3 +60,13 @@ Hema-club/
    ```bash
    pip install -r requirements.txt
    ```
+
+4. **Run back end**:
+  ```bash
+  python .\BackEnd.py
+  ```
+
+5. **Run web**:
+  ```bash
+  python .\App.py
+  ```
