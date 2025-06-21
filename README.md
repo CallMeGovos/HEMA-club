@@ -1,7 +1,6 @@
 # HEMA-club
 
 ### Sitemap
-
 🏠 **Trang chủ (Dashboard)**
 - 🔐 Đăng nhập / Đăng ký (streamlit-authenticator)
 - 🧑‍💼 Quản lý hồ sơ  
@@ -21,29 +20,37 @@
   - Lên lịch tập  
   - Nhận tư vấn
 
+#### Use Case Diagram
+![Diagram](images/UseCaseHemaClub.drawio.png)
+
 #### Trang Đăng nhập
 ![Login Screen](images/login.png)
 
 #### Trang Đăng ký
 ![Register Screen](images/register.png)
 
-#### Cấu trúc dự án
+#### Trang giao diện chatbot
+![Chatbot Screen](images/chatbot.png)
+
+### Cấu trúc dự án
 Hema-club/
 ```
-├── app.py
-├── back_End.py
+├── App.py
+├── BackEnd.py
 ├── static/
+│   └── footer.css
 │   └── style.css
 ├── templates/
 │   ├── base.html
-│   ├── login.html
-│   ├── register.html
-│   ├── chatbot.html
 │   └── callbot.html
+│   ├── chatbot.html
+│   ├── login.html
+│   └── index.html
+│   ├── register.html
 ├── Database.db
 ```
 
-####Cách khởi chạy dự án
+### Cách khởi chạy dự án
 ## Installation
 1. **Clone the repository**:
    ```bash
@@ -62,11 +69,11 @@ Hema-club/
    ```
 
 4. **Run back end**:
-  ```bash
-  python .\BackEnd.py
-  ```
+    ```bash
+    python .\BackEnd.py
+    ```
 
 5. **Run web**:
-  ```bash
-  python .\App.py
-  ```
+    ```bash
+    python .\App.py
+    ```
