@@ -26,7 +26,7 @@ def call_api(endpoint, method="GET", data=None):
 
 @app.route("/")
 def index():
-    return redirect(url_for("login"))
+    return render_template("index.html")
 
 
 @app.route("/login", methods=["GET", "POST"])

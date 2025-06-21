@@ -29,6 +29,7 @@
 
 #### Cấu trúc dự án
 Hema-club/
+'''
 ├── app.py
 ├── back_End.py
 ├── static/
@@ -40,3 +41,22 @@ Hema-club/
 │   ├── chatbot.html
 │   └── callbot.html
 ├── Database.db
+'''
+
+####Cách khởi chạy dự án
+## Installation
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/CallMeGovos/HEMA-club
+   ```
+
+2. **Create a virtual environment and activate it**:
+   ```bash
+   python -m venv env
+   source env/bin/activate  # On Windows: env\Scripts\activate
+   ```
+
+3. **Install the required packages**:
+   ```bash
+   pip install -r requirements.txt
+   ```

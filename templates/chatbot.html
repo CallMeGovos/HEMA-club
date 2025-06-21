@@ -18,8 +18,12 @@
       </div>
       <div class="card-body chat-container">
         {% for msg in messages %}
-        <div class="{{ 'user-message' if msg.isUser else 'bot-message' }}">
-          {{ msg.text }}
+        <div style="text-align: {{ 'right' if msg.isUser else 'left' }};">
+          <div class="{{ 'user-message' if msg.isUser else 'bot-message' }}">
+            <div class="{{ 'user-message-text' if msg.isUser else 'bot-message-text' }}">
+              {{ msg.text }}
+            </div>
+          </div>
         </div>
         {% else %}
         <p>Chưa có tin nhắn.</p>
