@@ -22,6 +22,7 @@
 
 #### Use Case Diagram
 ![Diagram](images/UseCaseHemaClub.drawio.png)
+![Mô tả Use Case](use_case_diagram.markdown)
 
 #### Trang Đăng nhập
 ![Login Screen](images/login.png)
@@ -77,3 +78,4 @@ Hema-club/
     ```bash
     python .\App.py
     ```
+
